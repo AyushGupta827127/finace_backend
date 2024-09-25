@@ -7,7 +7,7 @@ const connectDB = require('./app/db.config') // Adjust the path if necessary
 const { initializeAllModels } = require('./app/models/dbModel') // Import model initialization function
 
 // Connect to MongoDB
-connectDB("mongodb://localhost:27017/finaceIndia").then(async () => {
+connectDB("mongodb+srv://ayushguptacspl:LExgXtaAfvxISLuo@cluster0.gje46.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(async () => {
   // Initialize models after successful DB connection
   await initializeAllModels() 
 })
